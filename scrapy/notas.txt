@@ -1,0 +1,18 @@
+Rodar spider no terminal
+    scrapy runspider nome_do_arquivo.py
+
+Criar um projeto scrapy
+    scrapy startproject nome_do_projeto
+    Ex: scrapy startproject courses
+    Isso criará uma pasta com o nome_do_projeto e um arquivo scrapy.cfg com outra pasta de mesmo nome
+    contendo os arquivos __init__.py  items.py  middlewares.py  pipelines.py  settings.py  spiders
+    scrapy.cfg => arquivo de configurações e o local das configurações, deploy, etc
+    spiders => onde serão armazenadas as spiders
+
+Criar uma spider
+    scrapy genspider nome_da_spider url
+    Ex: scrapy genspider coursera https://www.coursera.org/browse\?languages\=pt
+    Cria um arquivo coursera.py em courses/courses/spiders/coursera.py
+
+Criando uma spider dessa forma, rodamos no terminal com:
+    scrapy crawl coursera
