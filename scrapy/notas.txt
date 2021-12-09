@@ -16,3 +16,9 @@ Criar uma spider
 
 Criando uma spider dessa forma, rodamos no terminal com:
     scrapy crawl coursera
+
+Usando o shell do scrapy
+    scrapy shell url
+    Ex: scrapy shell https://br.udacity.com/courses/all/
+    Dessa forma é como se estivéssemos no método parse
+    O terminal fica liberado e podemos acessar o response (do parser)
